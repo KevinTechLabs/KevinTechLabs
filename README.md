@@ -1,4 +1,4 @@
-# 👋 Hey, I'm Kevin Marcotte
+# 👋 Hey, I'm Kevin
 
 ### Homelab Builder | Security & Blue Team | DevSecOps | Linux
 
