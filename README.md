@@ -65,8 +65,6 @@ Encrypted personal notes, kept in two versions on purpose. v1 is a hardened Flas
 ### ☢️ [REACTOR: Hyprland Desktop](https://github.com/KevinTechLabs/Custom-Linux-Waybar)
 A nuclear-reactor themed Hyprland setup for Arch / CachyOS: Waybar, a slide-out control-room sidebar, a terminal dashboard and a power menu, installed with one command.
 
-<img src="https://raw.githubusercontent.com/KevinTechLabs/Custom-Linux-Waybar/main/preview.webp" alt="REACTOR Hyprland desktop" width="100%">
-
 ---
 
 ## 🧰 Toolbox
