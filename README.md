@@ -59,8 +59,8 @@ A control panel for the homelab. Live metrics, Docker start/stop/logs, Wake-on-L
 ### 🤖 [NexusLLM](https://github.com/KevinTechLabs/NexusLLM)
 A private local AI server: Ollama and Open WebUI on an RTX 4070, with local RAG, web search, a phone app, monitoring and Discord alerts, reachable only over Tailscale.
 
-### 🔐 [Stash](https://github.com/KevinTechLabs/Stash-Notes-App)
-Encrypted personal notes, kept in two versions on purpose. v1 is a hardened Flask server app; v2 rebuilds it as an installable phone app that encrypts everything on the device with **AES-256-GCM**, works offline and supports recovery codes.
+### 🔐 [Stash Password Manager](https://github.com/KevinTechLabs/Stash-Password-Manager)
+A self-hosted password manager, kept in two versions on purpose. v1 is a hardened Flask server app; v2 rebuilds it as an installable phone app that encrypts every login on the device with **AES-256-GCM**, works offline, generates strong passwords and supports recovery codes.
 
 ### ☢️ [REACTOR: Hyprland Desktop](https://github.com/KevinTechLabs/Custom-Linux-Waybar)
 A nuclear-reactor themed Hyprland setup for Arch / CachyOS: Waybar, a slide-out control-room sidebar, a terminal dashboard and a power menu, installed with one command.
