@@ -47,6 +47,9 @@ A self-hosted SOC dashboard and network threat monitor. The detection engine is 
 ### 🔍 [Homelab SIEM & Detection Lab](https://github.com/KevinTechLabs/Homelab-SIEM-Detection-Lab)
 A single-node Wazuh SIEM watching a segmented network. Five custom rules turned **~8,300 false-alarm events** into quiet records, while everything else still alerts at full severity. CIS hardening took the SIEM server from **47 % to 67 %** with zero lockouts.
 
+### 🟣 [Purple-Team Detection Lab](https://github.com/KevinTechLabs/Purple-Team-Detection-Lab)
+Run real **ATT&CK** techniques against Linux and Windows, measure what the Wazuh SIEM catches, then write the rules to close the gaps. Linux detection went from **2/10 to 7/10** with custom auditd + FIM + rules; on Windows, Sysmon caught most techniques out of the box, and two custom rules closed a discovery-visibility gap and a log-clear rating gap. The honest finding: detection coverage is a function of telemetry and tuning, not platform.
+
 ### 🚀 [Personal CI/CD Platform](https://github.com/KevinTechLabs/Personal-CI-CD)
 From `git push` to a running, self-healing service. ruff, bandit, pip-audit and TruffleHog, tests against real Postgres, a Trivy gate, SBOM and **cosign** signing, then pull-based GitOps deploys that roll back automatically on an SLO breach.
 
