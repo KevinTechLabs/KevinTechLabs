@@ -72,6 +72,6 @@ A nuclear-reactor themed Hyprland setup for Arch / CachyOS: Waybar, a slide-out 
 
 ## 🧰 Toolbox
 
-`pfSense` `Suricata` `pfBlockerNG` `Wazuh` `Sysmon` `Pi-hole` `Docker` `GitHub Actions` `Trivy` `cosign` `Python` `FastAPI` `Flask` `Bash` `Ollama` `Tailscale` `Ubuntu` `Kali` `Arch`
+`pfSense` `Suricata` `pfBlockerNG` `Wazuh` `Sysmon` `MITRE ATT&CK` `Atomic Red Team` `auditd` `Pi-hole` `Docker` `GitHub Actions` `Trivy` `cosign` `Python` `PowerShell` `FastAPI` `Flask` `Bash` `Ollama` `Tailscale` `Ubuntu` `Kali` `Arch`
 
 <sub>Every address in my repos is an example. Real IPs, keys and credentials are never published.</sub>
