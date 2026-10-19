@@ -50,6 +50,9 @@ A single-node Wazuh SIEM watching a segmented network. Five custom rules turned 
 ### 🟣 [Purple-Team Detection Lab](https://github.com/KevinTechLabs/Purple-Team-Detection-Lab)
 Run real **ATT&CK** techniques against Linux and Windows, measure what the Wazuh SIEM catches, then write the rules to close the gaps. Linux detection went from **2/10 to 7/10** with custom auditd + FIM + rules; on Windows, Sysmon caught most techniques out of the box, and two custom rules closed a discovery-visibility gap and a log-clear rating gap. The honest finding: detection coverage is a function of telemetry and tuning, not platform.
 
+### 🎯 [Homelab Threat Hunt](https://github.com/KevinTechLabs/Homelab-Threat-Hunt)
+A hypothesis-driven hunt through 23 days of my own Wazuh, Suricata, pfSense and Pi-hole logs: **10 hunts, 12 findings**, each verdict backed by a query and sanitized evidence. It caught custom detections that had silently stopped firing and an IDS whose alerts were **99.47 % TCP noise**, and it turned **28,000+** scary-looking alerts into precise tuning rules, deployed and verified.
+
 ### 🚀 [Personal CI/CD Platform](https://github.com/KevinTechLabs/Personal-CI-CD)
 From `git push` to a running, self-healing service. ruff, bandit, pip-audit and TruffleHog, tests against real Postgres, a Trivy gate, SBOM and **cosign** signing, then pull-based GitOps deploys that roll back automatically on an SLO breach.
 
