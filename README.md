@@ -11,7 +11,7 @@ Everything here started as a problem in my own homelab: a flat network anyone co
 ## 🛡️ What I focus on
 
 - **Network defense:** pfSense with Suricata IDS and pfBlockerNG, VLAN segmentation, forced DNS through Pi-hole
-- **Detection & response:** a Wazuh SIEM with evidence-based tuning, plus Sentinel, the SOC dashboard I wrote
+- **Detection & response:** a Wazuh SIEM with evidence-based tuning, detection-as-code with Sigma rules tested in CI, plus Sentinel, the SOC dashboard I wrote
 - **Hardening:** CIS benchmarks, ufw and fail2ban, Docker exposure control, key-only SSH
 - **DevSecOps:** CI/CD with SAST, image scanning, SBOMs, signed images and GitOps deploys that roll back on their own
 - **Self-hosting & privacy:** local AI, encrypted notes and remote access over Tailscale only, with nothing exposed to the internet
@@ -53,6 +53,9 @@ Run real **ATT&CK** techniques against Linux and Windows, measure what the Wazuh
 ### 🎯 [Homelab Threat Hunt](https://github.com/KevinTechLabs/Homelab-Threat-Hunt)
 A hypothesis-driven hunt through 23 days of my own Wazuh, Suricata, pfSense and Pi-hole logs: **10 hunts, 12 findings**, each verdict backed by a query and sanitized evidence. It caught custom detections that had silently stopped firing and an IDS whose alerts were **99.47 % TCP noise**, and it turned **28,000+** scary-looking alerts into precise tuning rules, deployed and verified.
 
+### 🚨 [Detection-as-Code](https://github.com/KevinTechLabs/Detection-as-Code)
+Detection rules treated like software. Sigma rules live in Git, and every rule ships with attack logs it **must** catch and benign look-alikes it **must not**. GitHub Actions validates, tests and converts each rule for Wazuh and Splunk, so a broken or noisy rule fails the build before it reaches the SIEM. Half the rules come from the threat hunt above, including a credential-search detection that was right **1 time in 109**, rewritten so its old false positives became regression tests.
+
 ### 🚀 [Personal CI/CD Platform](https://github.com/KevinTechLabs/Personal-CI-CD)
 From `git push` to a running, self-healing service. ruff, bandit, pip-audit and TruffleHog, tests against real Postgres, a Trivy gate, SBOM and **cosign** signing, then pull-based GitOps deploys that roll back automatically on an SLO breach.
 
@@ -75,6 +78,6 @@ A nuclear-reactor themed Hyprland setup for Arch / CachyOS: Waybar, a slide-out 
 
 ## 🧰 Toolbox
 
-`pfSense` `Suricata` `pfBlockerNG` `Wazuh` `Sysmon` `MITRE ATT&CK` `Atomic Red Team` `auditd` `Pi-hole` `Docker` `GitHub Actions` `Trivy` `cosign` `Python` `PowerShell` `FastAPI` `Flask` `Bash` `Ollama` `Tailscale` `Ubuntu` `Kali` `Arch`
+`pfSense` `Suricata` `pfBlockerNG` `Wazuh` `Sysmon` `Sigma` `MITRE ATT&CK` `Atomic Red Team` `auditd` `Pi-hole` `Docker` `GitHub Actions` `Trivy` `cosign` `Python` `PowerShell` `FastAPI` `Flask` `Bash` `Ollama` `Tailscale` `Ubuntu` `Kali` `Arch`
 
 <sub>Every address in my repos is an example. Real IPs, keys and credentials are never published.</sub>
